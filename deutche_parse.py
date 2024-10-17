@@ -11,6 +11,7 @@ def link_gen(location='AD08DE6863', price='800'):
     return f'{MAIN_PAGE_URL},{ap_location}&{ap_max_price}'
 
 def parse_main():
+    # TODO: docstring
     houses_desc_list = []
     session = requests_cache.CachedSession()
     response = session.get(link_gen()).text
